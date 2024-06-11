@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import ForwordrefExample from "./components/ForwordrefExample";
+import UsememoExample from "./components/UsememoExample";
+import UsehookExample from "./components/UsehookExample";
+import Action from "./components/Action";
+import FormState from "./components/FormState";
+import FormStatus from "./components/FormStatus";
+import Optimistic from "./components/Optimistic";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <UsememoExample />
+      <ForwordrefExample />
+      <UsehookExample />
+      <Action />
+      <FormState />
+      <FormStatus />
+      <Optimistic />
     </div>
   );
 }
